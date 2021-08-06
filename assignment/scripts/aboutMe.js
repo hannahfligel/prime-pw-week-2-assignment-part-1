@@ -68,8 +68,9 @@ if ( pets > friendsPets ){
 } else if ( pets < friendsPets ){
     mostPets = friendsPets;
     console.log(mostPets);
+} else {
+    console.log("You both have", pets, "pets");
 }
-
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
@@ -89,4 +90,4 @@ switch (mostPets) {
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-
+(adventurous === true) ? console.log("Adventures are great!") : console.log("How about we stay home?");
