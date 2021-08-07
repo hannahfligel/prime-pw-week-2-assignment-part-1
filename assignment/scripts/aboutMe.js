@@ -72,21 +72,22 @@ if ( pets > friendsPets ){
     console.log("You both have", pets, "pets");
 }
 
-
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-mostPets;
-switch (mostPets) {
-    case 1: ( pets > friendsPets )
-        mostPets = pets;
-        console.log(mostPets);
-        break;
-    case 2: ( pets < friendsPets )
-        mostPets = pets;
-        console.log(mostPets);
-    default:
-        console.log("You both have", pets, "pets");
-}
 
+switch (true) {
+    case (pets === friendsPets):
+        mostPets = pets;
+        console.log("You both have", mostPets, "pets");
+        break;
+    case (pets > friendsPets):
+        mostPets = pets;
+        console.log("You have more pets", mostPets);
+        break;
+    case (pets < friendsPets):
+        mostPets = friendsPets;
+        console.log("Your friend has more pets", mostPets);
+        break;
+}
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
